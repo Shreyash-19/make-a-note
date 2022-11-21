@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Make-a-note
+        </title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<link href="/assest/style.css" rel="stylesheet" type="text/css" />  
+<script src="/assest/todo.js"></script>  
+    </head>
+    <body>
+        <h1>Make-a-note</h1>
+        <div id="todo-table">
+            <form>
+                <input type="text" name='item' placeholder="Add a text..." required/>
+                <button type="submit">
+                Add item
+                </button>
+            </form>
+            <ul>
+                <% for(var i=0;i<data.length;i++){ %>
+<li><%=data[i].item %></li>
+
+
+               <% } %>
+
+
+            </ul>
+        </div>
+    </body>
+</html>
